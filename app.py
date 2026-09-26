@@ -1,3 +1,13 @@
+import os
+import subprocess
+
+# Streamlit Cloud üzerinde Chromium tarayıcısının otomatik kurulmasını sağlar
+try:
+    import playwright
+    subprocess.run(["playwright", "install", "chromium"], check=True)
+except Exception as e:
+    print(f"Playwright kurulum hatası: {e}")
+
 import streamlit as st
 from bot import scan_multiple_dates, get_explore_deals, get_airline_campaigns
 
