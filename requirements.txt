@@ -1,3 +1,4 @@
+streamlit
 playwright
-python-dotenv
 requests
+python-dotenv
